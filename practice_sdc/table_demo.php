@@ -1,4 +1,4 @@
-<!-- here we are displaying php variables in html table.  -->
+<!-- here we are displaying php variables in html table(imp)  --> 
 <?php
 // php variables
 $name = "Alice";
