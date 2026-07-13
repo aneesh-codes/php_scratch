@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1>File Uploading</h1>
-    <form action = "" method="POST" enctype = "multipart/form-data">
-        <label for =""> Profile Name : </label>
-        <input type = "file" name ="profile"/>
+    <form action = "" method="POST" enctype="multipart/form-data">
+        <label for =""> File Name : </label>
+        <input type = "file" name ="file"/>
         <br>
 
         <input type = "submit" value = "Upload">
@@ -21,8 +21,8 @@
 <?php
     $error =[];
     if($_SERVER['REQUEST_METHOD']=='POST'){
-        if($_FILES['profile']['error'] == 0){
-         if($_FILES['profile']['size'] < 1000000){
+        if($_FILES['file']['error'] == 0){
+         if($_FILES['file']['size'] < 1000000){
             echo "File Uploaded Successfully";
          }else{
             echo "File size must not exceed 1MB";
